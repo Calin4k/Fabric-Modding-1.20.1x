@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nickmod",
+	"version": "${version}",
+	"name": "Nick Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Nick!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nickmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nick.nickmod.NickMod"
+		],
+		"client": [
+			"net.nick.nickmod.NickModClient"
+		],
+		"fabric-datagen": [
+			"net.nick.nickmod.NickModDataGenerator"
+		]
+	},
+	"mixins": [
+		"nickmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
