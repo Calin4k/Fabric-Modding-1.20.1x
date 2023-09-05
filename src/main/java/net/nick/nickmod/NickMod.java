@@ -2,6 +2,7 @@ package net.nick.nickmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.nick.nickmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,7 @@ public class NickMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+
+		ModItems.registerMocItems();
 	}
 }
